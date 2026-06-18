@@ -1,6 +1,6 @@
 # x3dh
 
-A pure Rust implementation of the **Extended Triple Diffie-Hellman (X3DH)** key agreement protocol, as specified by Signal, built on the **X25519** elliptic curve.
+A pure Rust implementation of the **Extended Triple Diffie-Hellman (X3DH)** key agreement protocol, as specified by Signal (https://signal.org/docs/specifications/x3dh/), built on the **X25519** elliptic curve.
 
 X3DH establishes a shared secret between two parties (here called Alice and Bob) asynchronously — Bob can be offline when Alice initiates. The resulting shared secret can then be used to bootstrap a Double Ratchet session for forward-secure messaging.
 

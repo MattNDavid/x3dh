@@ -9,14 +9,14 @@ pub struct InitX3dhKeys {
 pub struct RecvX3dhKeys {
     pub identity_key: VerifyingKey, //permanent
     pub signed_prekey: PublicKey, //rotates periodically
-    pub one_time_prekey: (u32, PublicKey), //one time use
+    pub one_time_prekey: PublicKey, //one time use
 }
 
 pub struct PublishInitialKeys {
     pub identity_key: VerifyingKey, //permanent
     pub signed_prekey: PublicKey, //rotates periodically
     pub prekey_signature: Signature, //signature of signed prekey with identity key
-    pub one_time_prekey: Vec<(u32, PublicKey)>, //one time use
+    pub one_time_prekey: Vec<PublicKey>, //one time use
 }
 
 pub struct SignedPrekeyBundle {
